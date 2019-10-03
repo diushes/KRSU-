@@ -1,0 +1,4 @@
+nums=[int(a) for a in input().split(' ')]
+if nums[0]>10**(-17) and nums[0]<10**17 and nums[1]>(-10)**17 and nums[1]<10**17:
+  b=(nums[0]+nums[1])
+  print(nums[0],'+',nums[1],'=',b)
