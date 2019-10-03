@@ -1,0 +1,11 @@
+NM=[a for a in input().split(' ')]
+checker=False
+for i in range(2):
+  if (NM[i].isdigit()):
+    NM[i]=int(NM[i])
+    checker=True
+  else:
+    checker=False
+    break
+if checker==True:
+  print((NM[0]*NM[1])-1)
