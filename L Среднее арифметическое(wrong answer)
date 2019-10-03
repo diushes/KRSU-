@@ -1,1 +1,15 @@
 
+inp=[a for a in input().split(' ') ]
+checker=False
+
+for i in range(3):
+  if (inp[i].isdigit()):
+    inp[i]=int(inp[i])
+    checker=True
+  else:
+    checker=False
+    break
+if checker==True and inp[0]>=1 and inp[0]<=10**9 and inp[1]>=(-1000) and inp[1]<=1000 and inp[2]>=(-1000) and inp[2]<=1000:
+  sumn=int(((((inp[1]*2)+(inp[2]*(inp[0]-1)))/2)*inp[0])/inp[0])
+  if sumn<=10**9 and sumn>=10**(-9):
+    print(sumn)
