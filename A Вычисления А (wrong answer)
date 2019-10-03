@@ -1,0 +1,15 @@
+numbers=[a for a in input().split(" ")]
+checker=True
+if len(numbers)==3:
+  for element in numbers:
+    for symbol in element:
+      if symbol in'12345267890':
+        
+        checker=True
+      else:
+        checker=False
+        break
+if checker==True:
+  print(int(numbers[0])+int(numbers[1])+int(numbers[2]))
+  print(int(numbers[0])*int(numbers[1])*int(numbers[2]))
+  print((int(numbers[0])+int(numbers[1])+int(numbers[2]))/3)
