@@ -1,0 +1,5 @@
+a=int(input())
+h=int(a/3600)
+m=int((a-(3600*h))/60)
+s=int(a-(3600*h)-(60*m))
+print(h,m,s)
