@@ -1,0 +1,3 @@
+inp=int(input())
+if inp>=3 and inp<=1000000:
+  print((inp-2)*180)
